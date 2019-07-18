@@ -77,6 +77,7 @@ public class AssertUtil {
 	 * @throws CMSException 
 	 */
 	public static void notEmpty(Collection<List> coll, String message) throws CMSException{
+		System.out.println(coll);
 		if (coll==null || coll.isEmpty() || coll.size()==0) 
 			throw new CMSException(message);
 	}
